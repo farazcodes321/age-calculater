@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 10px;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-image: url("bg.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    width: 38%;
+    align-items: center;
+    background: rgb(26,9,121);
+    background: linear-gradient(90deg, rgba(26,9,121,1) 0%, rgba(36,0,0,1) 55%, rgba(255,0,185,1) 100%);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.container label {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.container #dob {
+    margin-bottom: 3rem;
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+.container .desc {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.container .age {
+    font-size: 3rem;
+    color: #fff;
+
+
+}
+.container .age > span {
+    font-weight: bold;
+}
+.error {
+    display: none;
+    font-size: 4rem;
+}
+@media only screen and (max-width: 600px) {
+    
+    body{
+        /* background: #080808; */
+        background-image: url("res.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .container{
+        width: 80%;
+
+
+    }
+    .container label{
+        font-size: 20px;
+    }
+    .container #dob{
+        padding: 10px 20px;
+
+    }
+    .container .desc {
+        font-size: 2rem
+
+    }
+    .container .age{
+        font-size: 2rem;
+
+    }
+}
